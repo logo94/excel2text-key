@@ -1,6 +1,6 @@
 import openpyxl
 
-file = "test.xlsx"
+file = "" # path/to/file
 
 def file_name(cell):
     num_type = type(sh.cell(row = i, column = 1).value)
