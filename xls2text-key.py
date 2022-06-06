@@ -1,5 +1,7 @@
 import xlrd
 
+file = "" # path/to/file
+
 def file_name(cell):
     num_type = type(cell.value)
     if num_type == float:
@@ -18,7 +20,7 @@ def split_title(cell):
 def split_key(cell):
     return cell.value.split(" - ")
 
-wb = xlrd.open_workbook("test.xls")
+wb = xlrd.open_workbook(file)
 sh = wb.sheet_by_index(0)
 
 for row in sh.get_rows():
