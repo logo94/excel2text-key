@@ -13,12 +13,12 @@ def file_name(cell):
     return num
 
 def split_title(cell):
-    string1 = sh.cell(row = i, column=2).value.split(" / ")
-    string2 = string1[0].replace("*", "")
+    string1 = sh.cell(row = i, column=2).value.split(" / ") # Modifica parametri: sostituire con il simbolo utilizzato per dividere il testo
+    string2 = string1[0]   # Modifica parametri: per omettere dalla lettura caratteri speciali aggiungere, senza spazi .replace("simbolo", "")
     return string2
 
 def split_key(cell):
-    return sh.cell(row = i, column=3).value.split(" - ")
+    return sh.cell(row = i, column=3).value.split(" - ")    # Modifica parametri: sostituire con il simbolo utilizzato per dividere i vari soggetti
 
 wb = openpyxl.load_workbook(file)
 sh = wb.active
