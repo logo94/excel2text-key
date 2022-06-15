@@ -13,12 +13,12 @@ def file_name(cell):
     return num
 
 def split_title(cell):
-    string1 = cell.value.split(" / ")
-    string2 = string1[0].replace("*", "")
+    string1 = cell.value.split(" / ")   # Modifica parametri: sostituire con il simbolo utilizzato per dividere il testo
+    string2 = string1[0]    # Modifica parametri: per omettere dalla lettura caratteri speciali aggiungere, senza spazi .replace("simbolo", "")
     return string2
 
 def split_key(cell):
-    return cell.value.split(" - ")
+    return cell.value.split(" - ") # Modifica parametri: sostituire con il simbolo utilizzato per dividere i vari soggetti
 
 wb = xlrd.open_workbook(file)
 sh = wb.sheet_by_index(0)
