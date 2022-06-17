@@ -1,3 +1,5 @@
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/logo94/excel2text-key/blob/main/README.en.md)
+
 # excel2text-key
 Excel2text-key permette di convertire in modo automatizzato i dati contenuti in un file Excel in coppie di file con estensione `.txt` e `.key`. 
 
