@@ -1,3 +1,5 @@
+[![it](https://img.shields.io/badge/lang-it-green.svg)](https://github.com/logo94/excel2text-key/edit/main/README.md)
+
 # excel2text-key
 Excel2text-key allows to automatically convert data contained in an Excel file into file pairs with the extension '.txt' and '.key'.
 
