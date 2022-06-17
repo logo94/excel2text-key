@@ -1,3 +1,4 @@
+[![it](https://img.shields.io/badge/lang-it-green.svg)](https://github.com/logo94/excel2text-key/edit/main/README.md)
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/logo94/excel2text-key/blob/main/README.en.md)
 
 # excel2text-key
