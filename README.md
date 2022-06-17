@@ -6,7 +6,7 @@ Il repository contiene due scripts in Python che permettono la lettura di file e
 * [xlsx2text-key.py](https://github.com/logo94/excel2text-key/blob/main/xlsx2text-key.py): per i file Microsoft Excel Open XML Spreadsheet;
 
 ## Installazione ##
-Per l'utilizzo degli scripts è necessario aver scaricato `Python 3.7+` sul proprio computer, per installare Python seguire le istruzioni, in base al proprio sistema operativo, riportate al link: [Python download](https://www.python.org/downloads/).
+Per l'utilizzo degli scripts è necessario aver scaricato `Python 3.7+` sul proprio computer, per installare Python seguire le istruzioni, in base al proprio sistema operativo, riportate al seguente [link](https://www.python.org/downloads/).
 
 Una volta eseguito il download è possibile verificare le versioni di `Python` e `pip` tramite i comandi:
 
