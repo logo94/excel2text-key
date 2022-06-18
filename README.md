@@ -2,14 +2,13 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/logo94/excel2text-key/blob/main/README.en.md)
 
 # excel2text-key
-Excel2text-key permette di convertire in modo automatizzato i dati contenuti in un file Excel in coppie di file con estensione `.txt` e `.key`. 
+Excel2text-key permette leggere un file Excel e di generare, per ogni riga compilata, una coppia di file con estensione `.txt` e `.key`.
 
-Il repository contiene due scripts in Python che permettono la lettura di file excel in due diversi formati:
-* [xls2text-key.py](https://github.com/logo94/excel2text-key/blob/main/xls2text-key.py): per i file Microsoft Excel 97-2003;
-* [xlsx2text-key.py](https://github.com/logo94/excel2text-key/blob/main/xlsx2text-key.py): per i file Microsoft Excel Open XML Spreadsheet;
+Lo script supporta diversi formati tra cui le estensioni: `.xls`, `.xlsx`, `.xlsm`, `.xltx` e `.xltm`.
+
 
 ## Installazione ##
-Per l'utilizzo degli scripts è necessario aver scaricato `Python 3.7+` sul proprio computer, per installare Python seguire le istruzioni, in base al proprio sistema operativo, riportate al seguente [link](https://www.python.org/downloads/).
+Per l'utilizzo degli scripts è necessario aver scaricato `Python 3.8+` sul proprio computer, per installare Python seguire, in base al proprio sistema operativo, le istruzioni riportate al seguente [link](https://www.python.org/downloads/).
 
 Una volta eseguito il download è possibile verificare le versioni di `Python` e `pip` tramite i comandi:
 
@@ -35,12 +34,12 @@ source pyenv/bin/activate
 ### Librerie ###
 Una volta attivato l'ambiente virtuale è possibile procedere con l'installazione delle librerie necessarie; Excel2text-key utilizza due diverse librerie
 
-[xls2text-key.py](https://github.com/logo94/excel2text-key/blob/main/xls2text-key.py) utilizza la libreria [xlrd](https://pypi.org/project/xlrd/), per l'installazione eseguire:
+[xls2textkey.py](https://github.com/logo94/excel2text-key/blob/main/xls2textkey.py) utilizza la libreria [xlrd](https://pypi.org/project/xlrd/), per l'installazione eseguire:
 ```
 pip install xlrd
 ```
 
-[xlsx2text-key.py](https://github.com/logo94/excel2text-key/blob/main/xlsx2text-key.py) utilizza la libreria [openpyxl](https://openpyxl.readthedocs.io/en/stable/), per l'installazione eseguire:
+[xlsx2textkey.py](https://github.com/logo94/excel2text-key/blob/main/xlsx2textkey.py) utilizza la libreria [openpyxl](https://openpyxl.readthedocs.io/en/stable/), per l'installazione eseguire:
 ```
 pip install openpyxl
 ```
@@ -52,17 +51,12 @@ Per eseguire correttamente la conversione il file excel di partenza deve essere 
 * **Colonna 2**: porzione testuale di un documento; nel caso in cui il testo includa informazioni secondarie, è possibile dividere testo di interesse e testo secondario con una barra obliqua (" / "). Lo script leggerà esclusivamente il testo posizionato alla sinistra della barra obliqua; 
 * **Colonna 3**: lista di parole chiave associate alla porzione testuale riportata all'interno della Colonna 2. Le parole chiave possono essere passate in sequenza, separate da un trattino (" - "), lo script disporrà automaticamente all'interno del file .key risultante una parola per ogni riga.
 
-Ogni coppia di file avrà il nome riportato all'interno della **Colonna 1**: il primo file conterrà il testo di un documento (**Colonna 2**) con estensione `.txt`; il secondo file conterrà la lista delle parole chiave associate al testo (**Colonna 3**), disposte una per riga, con estensione `.key`. 
+Ogni coppia di file sarà denominata con il codice identificativo riportato all'interno della **Colonna 1**: il primo file conterrà il testo di un documento (**Colonna 2**) con estensione `.txt`; il secondo file conterrà la lista delle parole chiave associate al testo (**Colonna 3**), disposte una per riga, con estensione `.key`. 
 
 I parametri dello script possono essere modificati o aggiunti, in base alle proprie necessità, in corrispondenza delle righe segnalate dal commento --> # Modifica parametri
-  
-Si consiglia di creare una cartella dedicata e inserire al suo interno lo script e il foglio excel da leggere; una volta creata la cartella e posizionati i due files sarà sufficiente eseguire, in base al formato del foglio di calcolo, i comandi: 
-```
-python3 xls2text-key.py
-```
-oppure
-```
-python3 xlsx2text-key.py
-```
 
-All'interno della stessa cartella verrà creata coppia di file `.txt` e `.key` per ogni riga del foglio di calcolo.
+Una volta scaricate le librerie necessarie e scaricato il repository, per avviare lo script sarà sufficiente eseguire il comando:
+```
+python3 app.py
+```
+Una volta selezionato il foglio di calcolo da convertire verrà generata una cartella, con lo stesso nome e nella stessa posizione del foglio di calcolo selezionato, all'interno del quale saranno situate le coppie di file `txt-key`.
