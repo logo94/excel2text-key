@@ -45,7 +45,7 @@ pip install xlrd
 pip install openpyxl
 ```
 
-## Utilizzo ##
+## Preparazione ##
 Per eseguire correttamente la conversione il file excel di partenza deve essere così strutturato:
 
 * **Colonna 1**: codice identificativo univoco di ogni documento, senza alcuna estensione. Può essere usato qualsiasi tipo di codice che sia testuale, numerico o alfanumerico; 
@@ -56,6 +56,7 @@ Ogni coppia di file sarà denominata con il codice identificativo riportato all'
 
 >I parametri dello script possono essere modificati o aggiunti, in base alle proprie necessità, in corrispondenza delle righe segnalate dal commento --> # Modifica parametri
 
+## Utilizzo ##
 Una volta scaricate le librerie necessarie e scaricato il repository, per avviare lo script sarà sufficiente eseguire il comando:
 ```
 python3 app.py
