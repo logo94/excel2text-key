@@ -1,5 +1,6 @@
-[![it](https://img.shields.io/badge/lang-it-green.svg)](https://github.com/logo94/excel2text-key/blob/main/README.md)
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/logo94/excel2text-key/blob/main/README.en.md)
+[![it](https://img.shields.io/badge/lang-it-blue.svg)](https://github.com/logo94/excel2text-key/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-en-yellow.svg)](https://github.com/logo94/excel2text-key/blob/main/README.en.md)
+![](https://img.shields.io/badge/Python-3.8%2B-green.svg)
 
 # excel2text-key
 Excel2text-key permette leggere un file Excel e di generare, per ogni riga compilata, una coppia di file con estensione `.txt` e `.key`.
@@ -53,7 +54,7 @@ Per eseguire correttamente la conversione il file excel di partenza deve essere 
 
 Ogni coppia di file sarà denominata con il codice identificativo riportato all'interno della **Colonna 1**: il primo file conterrà il testo di un documento (**Colonna 2**) con estensione `.txt`; il secondo file conterrà la lista delle parole chiave associate al testo (**Colonna 3**), disposte una per riga, con estensione `.key`. 
 
-I parametri dello script possono essere modificati o aggiunti, in base alle proprie necessità, in corrispondenza delle righe segnalate dal commento --> # Modifica parametri
+>I parametri dello script possono essere modificati o aggiunti, in base alle proprie necessità, in corrispondenza delle righe segnalate dal commento --> # Modifica parametri
 
 Una volta scaricate le librerie necessarie e scaricato il repository, per avviare lo script sarà sufficiente eseguire il comando:
 ```
