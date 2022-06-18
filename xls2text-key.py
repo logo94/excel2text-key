@@ -1,6 +1,11 @@
 import xlrd
+import tkinter as tk
+from tkinter import filedialog
 
-file = "" # path/to/file
+root = tk.Tk()
+root.withdraw()
+
+file = filedialog.askopenfilename()
 
 def file_name(cell):
     num_type = type(cell.value)
