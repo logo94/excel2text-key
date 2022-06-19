@@ -3,6 +3,8 @@
 # excel2text-key
 Excel2text-key allows to automatically convert data contained in an Excel file into file pairs with the extension `.txt` and `.key`.
 
+Supported extensions: `xls`, `xlsx`, `xlsm`, `xltx` and `xltm`.
+
 ## Basic install ##
 The script requires `Python 3.8+` installation, to install the correct Python version follow the instructions, based on your operating system, as reported to the following [link](https://www.python.org/downloads/).
 
