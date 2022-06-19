@@ -14,12 +14,12 @@ def write_from_xls(file):
         return num
 
     def split_title(cell):
-        string1 = cell.value.split(" / ")
-        string2 = string1[0].replace("*", "")
+        string1 = cell.value.split(" / ")   # Modifica parametri
+        string2 = string1[0]    # Modifica parametri: per esempio .replace("*", "")
         return string2
     
     def split_key(cell):
-        return cell.value.replace(" – ", " - ").split(" - ")
+        return cell.value.replace(" – ", " - ").split(" - ")    # Modifica parametri
 
 
     wb = xlrd.open_workbook(file)
