@@ -15,12 +15,12 @@ def write_from_xlsx(file):
         return num  
 
     def split_title(cell):
-        string1 = sh.cell(row = i, column=2).value.split(" / ")
-        string2 = string1[0].replace("*", "")
+        string1 = sh.cell(row = i, column=2).value.split(" / ") # Modifica parametri
+        string2 = string1[0]    # Modifica parametri: per esempio .replace("*", "")
         return string2
 
     def split_key(cell):
-        return sh.cell(row = i, column=3).value.replace(" – ", " - ").split(" - ")
+        return sh.cell(row = i, column=3).value.replace(" – ", " - ").split(" - ")  # Modifica parametri
     
     wb = openpyxl.load_workbook(file)
     sh = wb.active
