@@ -5,7 +5,7 @@
 # excel2text-key
 Excel2text-key permette di leggere un file Excel e generare, per ogni riga compilata, una coppia di file con estensione `.txt` e `.key`.
 
-Lo script supporta diversi formati tra cui le estensioni: `.xls`, `.xlsx`, `.xlsm`, `.xltx` e `.xltm`.
+Lo script supporta diversi formati tra cui le estensioni: `xls`, `xlsx`, `xlsm`, `xltx` e `xltm`.
 
 
 ## Installazione ##
