@@ -3,13 +3,13 @@
 ![](https://img.shields.io/badge/Python-3.8%2B-green.svg)
 
 # excel2text-key
-Excel2text-key permette leggere un file Excel e di generare, per ogni riga compilata, una coppia di file con estensione `.txt` e `.key`.
+Excel2text-key permette di leggere un file Excel e generare, per ogni riga compilata, una coppia di file con estensione `.txt` e `.key`.
 
 Lo script supporta diversi formati tra cui le estensioni: `.xls`, `.xlsx`, `.xlsm`, `.xltx` e `.xltm`.
 
 
 ## Installazione ##
-Per l'utilizzo degli scripts è necessario aver scaricato `Python 3.8+` sul proprio computer, per installare Python seguire, in base al proprio sistema operativo, le istruzioni riportate al seguente [link](https://www.python.org/downloads/).
+Per l'utilizzo degli scripts è necessario aver scaricato `Python 3.8+` sul proprio dispositivo, per installare Python seguire, in base al proprio sistema operativo, le istruzioni riportate al seguente [link](https://www.python.org/downloads/).
 
 Una volta eseguito il download è possibile verificare le versioni di `Python` e `pip` tramite i comandi:
 
@@ -61,4 +61,4 @@ Una volta scaricate le librerie necessarie e scaricato il repository, per avviar
 ```
 python3 app.py
 ```
-Una volta selezionato il foglio di calcolo da convertire verrà generata una cartella, con lo stesso nome e nella stessa posizione del foglio di calcolo selezionato, all'interno del quale saranno situate le coppie di file `txt-key`.
+Una volta selezionato il foglio di calcolo da convertire verrà generata una cartella, con lo stesso nome e nella stessa posizione del foglio di calcolo selezionato, contenente le coppie di file `txt-key`.
